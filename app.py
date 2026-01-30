@@ -4,6 +4,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.llms import HuggingFacePipeline
 from langchain.chains import RetrievalQA
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
 
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 import requests
